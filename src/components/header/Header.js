@@ -12,6 +12,14 @@ function Header() {
     const viewSkills = skillsSection.display;
     const viewResume = resumeSection.display;
 
+    // Function to close mobile menu
+    const closeMobileMenu = () => {
+        const menuBtn = document.getElementById("menu-btn");
+        if (menuBtn) {
+            menuBtn.checked = false;
+        }
+    };
+
     return (
         <header className="header" role="navigation" aria-label="Main Navigation">
             <a href="/" className="logo" aria-label="Homepage">
@@ -35,14 +43,14 @@ function Header() {
             <ul className="menu" role="menubar">
                 {viewSkills && (
                     <li role="none">
-                        <a href="#skills" role="menuitem">
+                        <a href="#skills" role="menuitem" onClick={closeMobileMenu}>
                             Skills
                         </a>
                     </li>
                 )}
                 {viewExperience && (
                     <li role="none">
-                        <a href="#experience" role="menuitem">
+                        <a href="#experience" role="menuitem" onClick={closeMobileMenu}>
                             Work Experiences
                         </a>
                     </li>
@@ -54,13 +62,14 @@ function Header() {
                             target="_blank"
                             rel="noopener noreferrer"
                             role="menuitem"
+                            onClick={closeMobileMenu}
                         >
                             Resume
                         </a>
                     </li>
                 )}
                 <li role="none">
-                    <a href="#contact" role="menuitem">
+                    <a href="#contact" role="menuitem" onClick={closeMobileMenu}>
                         Contact Me
                     </a>
                 </li>
