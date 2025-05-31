@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/suyash-portfolio/static/css/main.89cf42d2.css",
-    "main.js": "/suyash-portfolio/static/js/main.084a586d.js",
+    "main.css": "/suyash-portfolio/static/css/main.3b947c02.css",
+    "main.js": "/suyash-portfolio/static/js/main.53004416.js",
     "static/css/769.58f3ecc5.chunk.css": "/suyash-portfolio/static/css/769.58f3ecc5.chunk.css",
-    "static/js/769.c636a84c.chunk.js": "/suyash-portfolio/static/js/769.c636a84c.chunk.js",
+    "static/js/769.b1555b2c.chunk.js": "/suyash-portfolio/static/js/769.b1555b2c.chunk.js",
     "static/media/myPhoto.png": "/suyash-portfolio/static/media/myPhoto.024ca2cf677cec4b0c49.png",
     "static/media/contactIllustration.png": "/suyash-portfolio/static/media/contactIllustration.c34762d4fd56abb74ef6.png",
     "static/media/project3.png": "/suyash-portfolio/static/media/project3.b74934882003593968ba.png",
@@ -21,13 +21,13 @@
     "static/media/srmLogo.png": "/suyash-portfolio/static/media/srmLogo.ac86a5623c5d893b51cb.png",
     "static/media/skill.svg": "/suyash-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/suyash-portfolio/index.html",
-    "main.89cf42d2.css.map": "/suyash-portfolio/static/css/main.89cf42d2.css.map",
-    "main.084a586d.js.map": "/suyash-portfolio/static/js/main.084a586d.js.map",
+    "main.3b947c02.css.map": "/suyash-portfolio/static/css/main.3b947c02.css.map",
+    "main.53004416.js.map": "/suyash-portfolio/static/js/main.53004416.js.map",
     "769.58f3ecc5.chunk.css.map": "/suyash-portfolio/static/css/769.58f3ecc5.chunk.css.map",
-    "769.c636a84c.chunk.js.map": "/suyash-portfolio/static/js/769.c636a84c.chunk.js.map"
+    "769.b1555b2c.chunk.js.map": "/suyash-portfolio/static/js/769.b1555b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89cf42d2.css",
-    "static/js/main.084a586d.js"
+    "static/css/main.3b947c02.css",
+    "static/js/main.53004416.js"
   ]
 }
