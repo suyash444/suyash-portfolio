@@ -29,7 +29,13 @@ html, body {
     margin: 0 auto;
     padding: 0 1rem;
     overflow-x: hidden;
+    margin-top: 80px; /* 🟢 Add margin to push content below navbar */
 }
+
+.app-container {
+    margin-top: 60px; /* adjust as needed */
+}
+
 
 /* ====================
    Header Styles

@@ -8,17 +8,18 @@
 /* Header container */
 .header {
     background-color: $lightBackground1;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
+    padding: 10px 20px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-    overflow-x: hidden;
-    white-space: nowrap;
+    box-sizing: border-box;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
@@ -29,41 +30,39 @@
     font-weight: bold;
     text-decoration: none;
     font-family: "Agustina Regular";
+
+    .logo-name {
+        padding: 0 10px;
+        font-weight: bold;
+    }
+
+    .grey-color {
+        color: $subTitle;
+    }
 }
 
-.logo-name {
-    padding: 0 10px;
-    font-weight: bold;
-}
-
-.grey-color {
-    color: $subTitle;
-}
-
-/* Menu list */
-.header ul.menu {
+/* Desktop Menu */
+.menu {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
     list-style: none;
     margin: 0;
-    padding: 0 1rem;
-    gap: 0.75rem;
-}
+    padding: 0;
+    gap: 1rem;
 
-.header li a {
-    display: block;
-    padding: 10px 16px;
-    font-size: 0.95rem;
-    color: $textColor;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
+    li a {
+        display: block;
+        padding: 8px 16px;
+        font-size: 1rem;
+        color: $textColor;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
 
-.header li a:hover {
-    background-color: $headerHoverBG;
-    border-radius: 6px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+        }
+    }
 }
 
 /* Mobile Toggle Menu */
@@ -73,61 +72,67 @@
 
 .menu-icon {
     display: none;
-    padding: 25px 20px;
     cursor: pointer;
-    position: relative;
+    padding: 10px;
     user-select: none;
+    z-index: 1001;
+
+    .navicon {
+        background: $iconBackground;
+        height: 2px;
+        width: 25px;
+        position: relative;
+        transition: all 0.3s ease-out;
+
+        &::before,
+        &::after {
+            content: "";
+            background: $iconBackground;
+            height: 2px;
+            width: 25px;
+            position: absolute;
+            transition: all 0.3s ease-out;
+        }
+
+        &::before {
+            top: -8px;
+        }
+
+        &::after {
+            top: 8px;
+        }
+    }
 }
 
-.navicon {
-    background: $iconBackground;
-    height: 2px;
-    width: 18px;
-    display: block;
-    position: relative;
-    transition: background 0.2s ease-out;
-}
-
-.navicon:before,
-.navicon:after {
-    content: "";
-    position: absolute;
-    background: $iconBackground;
-    width: 100%;
-    height: 100%;
-    transition: all 0.2s ease-out;
-}
-
-.navicon:before {
-    top: 5px;
-}
-
-.navicon:after {
-    top: -5px;
-}
-
-/* Toggle open effect */
+/* Mobile Menu Open State */
 .menu-btn:checked ~ .menu {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
+    background-color: $lightBackground1;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent !important;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:before {
+.menu-btn:checked ~ .menu-icon .navicon::before {
     transform: rotate(-45deg);
     top: 0;
 }
 
-.menu-btn:checked ~ .menu-icon .navicon:after {
+.menu-btn:checked ~ .menu-icon .navicon::after {
     transform: rotate(45deg);
     top: 0;
 }
 
-/* Dark mode */
+/* Dark Mode */
 .dark-menu {
     background-color: $lightBackground1 !important;
     color: $textColorDark;
@@ -143,18 +148,10 @@
 
 /* Responsive */
 @media (max-width: 960px) {
-    .header {
-        font-size: 14px;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 12px 16px;
-    }
-
     .menu {
         display: none;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 0 0 10px;
+        align-items: center;
         width: 100%;
     }
 
