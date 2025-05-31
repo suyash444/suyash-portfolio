@@ -61,11 +61,19 @@
 }
 
 /* Lottie/Image Styles */
+.contact-image-div {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1rem; /* Add a bit of padding for breathing room */
+}
+
 .contact-image-div > img {
     max-width: 100%;
     height: auto;
-    margin-left: 1.5rem;
-    margin-top: -3rem;
+    display: block;
 }
 
 /* Dark Mode Support */
@@ -100,8 +108,9 @@
     }
 
     .contact-image-div {
-        
         margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
-
 }

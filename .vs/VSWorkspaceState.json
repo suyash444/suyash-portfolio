@@ -4,8 +4,9 @@
     "\\src",
     "\\src\\assets",
     "\\src\\components",
+    "\\src\\components\\header",
     "\\src\\containers"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\src\\components\\header\\Header.js",
   "PreviewInSolutionExplorer": false
 }

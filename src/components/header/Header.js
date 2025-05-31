@@ -22,7 +22,11 @@ function Header() {
 
     return (
         <header className="header" role="navigation" aria-label="Main Navigation">
-            <a href="/" className="logo" aria-label="Homepage">
+            <a
+                href="https://suyash444.github.io/suyash-portfolio/"
+                className="logo"
+                aria-label="Homepage"
+            >
                 <span className="grey-color">&lt;</span>
                 <span className="logo-name">{greeting.username}</span>
                 <span className="grey-color">/&gt;</span>
