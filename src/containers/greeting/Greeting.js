@@ -1,69 +1,63 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
+import React, { useContext } from "react";
+import { Fade } from "react-reveal";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
+import myPhoto from "../../assets/images/myPhoto.png";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
-  if (!greeting.displayGreeting) {
-    return null;
-  }
-  return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
-          <div className="greeting-text-div">
-            <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("ðŸ‘‹")}</span>
-              </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
-              <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
-        </div>
-      </div>
-    </Fade>
-  );
+    const { isDark } = useContext(StyleContext);
+
+    if (!greeting.displayGreeting) {
+        return null;
+    }
+
+    return (
+        <Fade bottom duration={1000} distance="40px">
+            <section className="greet-main" id="greeting" aria-label="Greeting Section">
+                <div className="greeting-main">
+                    {/* === Text Section === */}
+                    <div className="greeting-text-div">
+                        <div>
+                            <h1 className={`greeting-name ${isDark ? "dark-mode" : ""}`}>
+                                Suyash Singh
+                            </h1>
+
+                            <p className={`greeting-summary ${isDark ? "dark-mode" : ""}`}>
+                                Leveraging data to build smart, scalable solutions — skilled in Machine Learning, Cloud Pipelines, and Data Engineering.
+                            </p>
+
+                            <SocialMedia />
+
+                            <div className="button-greeting-div">
+                                <Button text="Let's Connect" href="#contact" />
+                                {greeting.resumeLink && (
+                                    <a
+                                        href={greeting.resumeLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="resume-button"
+                                        aria-label="Download Resume"
+                                    >
+                                        Download Resume
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* === Image Section === */}
+                    <div className="greeting-image-div">
+                        <img
+                            src={myPhoto}
+                            alt="Suyash Singh"
+                            className="profile-photo"
+                        />
+                    </div>
+                </div>
+            </section>
+        </Fade>
+    );
 }

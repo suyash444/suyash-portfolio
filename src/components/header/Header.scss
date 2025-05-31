@@ -1,182 +1,164 @@
-@import "../../_globalColor";
+﻿@import "../../_globalColor";
 
-/*React-headroom*/
+/* Headroom wrapper */
 .headroom-wrapper {
-  max-height: 100px;
+    max-height: 100px;
 }
 
-/* header */
-
-.dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
-}
-
-.dark-menu li a {
-  color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
-}
-
+/* Header container */
 .header {
-  background-color: $lightBackground1;
-  max-width: 100%;
-  padding: 15px 20px;
-  margin: 0px auto;
-}
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
-
-.grey-color {
-  color: $subTitle;
-}
-
-.header li a {
-  display: block;
-  padding: 15px 20px;
-  color: $textColor;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: $headerHoverBG;
-}
-
-.header .logo {
-  display: block;
-  flex: none;
-  float: left;
-  font-size: 1.5em;
-  text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
-}
-
-.header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
-}
-
-/* menu */
-
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: $iconBackground;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-
-.header .menu-icon .navicon-dark {
-  background: $textColorDark;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: $iconBackground;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon-dark:before,
-.header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ .menu {
-  max-height: 486px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent !important;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header {
+    background-color: $lightBackground1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .header .menu {
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
+    position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
+    z-index: 1000;
 }
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
-  }
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Agustina Regular";
+}
+
+.logo-name {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.grey-color {
+    color: $subTitle;
+}
+
+/* Menu list */
+.header ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    gap: 0.75rem;
+}
+
+.header li a {
+    display: block;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    color: $textColor;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.header li a:hover {
+    background-color: $headerHoverBG;
+    border-radius: 6px;
+}
+
+/* Mobile Toggle Menu */
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    padding: 25px 20px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.navicon {
+    background: $iconBackground;
+    height: 2px;
+    width: 18px;
+    display: block;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+.navicon:before,
+.navicon:after {
+    content: "";
+    position: absolute;
+    background: $iconBackground;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.navicon:before {
+    top: 5px;
+}
+
+.navicon:after {
+    top: -5px;
+}
+
+/* Toggle open effect */
+.menu-btn:checked ~ .menu {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent !important;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* Dark mode */
+.dark-menu {
+    background-color: $lightBackground1 !important;
+    color: $textColorDark;
+}
+
+.dark-menu li a {
+    color: $textColorDark !important;
+}
+
+.dark-menu li a:hover {
+    background-color: $buttonColor !important;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .header {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 0 10px;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }

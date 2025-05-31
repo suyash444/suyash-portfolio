@@ -1,22 +1,34 @@
 @import "../../_globalColor";
 
 #topButton {
-  visibility: hidden;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: $buttonColor;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 25px;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: $buttonColor;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 #topButton:hover {
-  background-color: $topButtonHover;
-  transition: all ease-in-out 0.2s;
+    background-color: $topButtonHover;
+    transform: translateY(-2px);
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    #topButton {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+        font-size: 20px;
+    }
 }

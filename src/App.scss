@@ -1,30 +1,73 @@
-@import "./globalColor";
+﻿@import "./_globalColor";
 
+
+/* ====================
+   Global Reset
+==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', sans-serif; // Change if using a custom font
+    background-color: #f9f9f9; // Or $backgroundColor if defined
+    color: #333;
+}
+
+/* ====================
+   App Wrapper
+==================== */
 .App {
-  text-align: center;
-  width: 100%;
-  overflow-x: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
+/* ====================
+   Header Styles
+==================== */
 .App-header {
-  background-color: $appHeaderBG;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(0.625rem + 2vmin);
-  color: $textColorDark;
+    background-color: $appHeaderBG;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.625rem + 2vmin);
+    color: $textColorDark;
+}
+
+/* ====================
+   Logo + Links
+==================== */
+.App-logo {
+    height: 40vmin;
 }
 
 .App-link {
-  color: $appLink;
+    color: $appLink;
+    text-decoration: none;
 }
 
-.subTitle {
-  color: $subTitle;
+/* ====================
+   Typography Fixes
+==================== */
+
+// Universal heading color
+h1, h2, h3, h4, h5, h6,
+.heading, .project-title, .education-heading, .achievement-heading, .contact-title {
+    color: $titleColor !important;
+}
+
+// Subtitle or dimmed text color
+.subTitle, .contact-subtitle, .achievement-subtitle {
+    color: $subTitle !important;
 }

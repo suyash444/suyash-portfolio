@@ -1,7 +1,61 @@
 @import "../_globalColor";
 
+/* === Base Styles === */
+.body {
+    background-color: $lightBackground1;
+    color: $textColor;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
 .dark-mode {
-  background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
+    background-color: #1e1e1e; // soft dark, not full black
+    color: $textColorDark;
+}
+
+
+/* === Main Container === */
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+/* === Section Headings === */
+.section-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $titleColor;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.subTitle {
+    color: $subTitle;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.dark-mode .section-heading {
+    color: $textColorDark;
+}
+
+.dark-mode .subTitle {
+    color: $textColorDark;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1rem;
+    }
 }

@@ -1,50 +1,51 @@
-.education-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
+@import "../../_globalColor";
 
+/* ===== Section Wrapper ===== */
 .education-section {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 20px 0px;
-  margin: 0px auto;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto 4rem auto;
+    padding: 2rem 0;
 }
 
-.education-section > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-
-.education-card-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-}
-
-@media (max-width: 1380px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
-  .education-heading {
-    font-size: 40px;
-  }
-  .education-text-subtitle {
-    font-size: 18px;
+/* ===== Section Heading ===== */
+.education-heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: $titleColor;
+    margin-bottom: 2.5rem;
     text-align: center;
-  }
+    line-height: 1.3;
+}
+
+/* ===== Cards Container ===== */
+.education-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ===== Dark Mode Compatibility ===== */
+.dark-mode .education-heading {
+    color: $textColorDark;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 1380px) {
+    .education-heading {
+        font-size: 2.75rem;
+    }
 }
 
 @media (max-width: 768px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
-  .education-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .education-text-subtitle {
-    font-size: 16px;
-  }
+    .education-heading {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .education-card-container {
+        gap: 1.5rem;
+    }
 }

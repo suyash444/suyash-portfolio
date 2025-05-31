@@ -1,70 +1,94 @@
 @import "../../_globalColor";
 
-.meter {
-  height: 20px;
-  position: relative;
-  background: $progressBarBackground;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-}
-.meter > span {
-  display: block;
-  height: 100%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
-  position: relative;
-  overflow: hidden;
-}
-.skill {
-  line-height: 3.5vw;
-}
-.skill-bars {
-  font-size: 28px;
-  width: 40%;
-}
+/* === Layout === */
 .skills-container {
-  display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+    display: flex;
+    width: 90%;
+    padding: 20px 10px;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+
 .skills-container > * {
-  flex: 1;
-  margin-bottom: 30px;
+    flex: 1;
+    min-width: 300px;
 }
+
+/* === Heading === */
+.skills-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $titleColor;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.dark-mode .skills-heading {
+    color: $textColorDark;
+}
+
+/* === Skill Bars === */
+.skill {
+    margin-bottom: 1.2rem;
+}
+
+.skill-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: $textColor;
+}
+
+.dark-mode .skill-title {
+    color: $textColorDark;
+}
+
+.meter {
+    height: 20px;
+    background: $progressBarBackground;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    background-color: $progressBarSpanBG;
+    border-radius: 25px;
+    transition: width 0.6s ease-in-out;
+}
+
+/* === Image === */
 .skills-image > img {
-  margin-left: 80px;
-  max-width: 90%;
-  height: auto;
+    margin-left: 80px;
+    max-width: 90%;
+    height: auto;
 }
 
-/* Media Query */
-
+/* === Responsive === */
 @media (max-width: 1456px) {
-  .skills-bar {
-    line-height: 4rem;
-  }
-  .skills-image {
-    display: none;
-    order: 2;
-  }
+    .skills-bar {
+        line-height: 2rem;
+    }
+
+    .skills-image {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-  }
-  .skills-bar {
-    line-height: 3rem;
-    margin: 20px;
-  }
-  .skills-image {
-    display: none;
-    order: 2;
-  }
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-heading {
+        text-align: center;
+    }
+
+    .skills-bar {
+        width: 100%;
+    }
 }

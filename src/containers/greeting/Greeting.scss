@@ -1,127 +1,165 @@
 @import "../../_globalColor";
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
+/* Section container */
+.main,
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    margin-top: 4rem;
 }
 
+/* Greeting container */
 .greeting-main {
-  display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
-}
-
+/* Columns */
 .greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+    flex: 1;
+    margin-bottom: 30px;
 }
 
-.empty-div {
-  margin-bottom: 40px;
+/* Left column: text */
+.greeting-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.greeting-name {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $titleColor;
+}
+
+.greeting-summary {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: $subTitle;
+    max-width: 600px;
+}
+
+.dark-mode .greeting-name,
+.dark-mode .greeting-summary {
+    color: $textColorDark !important;
+}
+
+/* Resume + Connect buttons */
 .button-greeting-div {
-  display: flex;
-  margin-top: 40px;
-}
-.download-link-button {
-  text-decoration: none;
-}
-
-.greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-.greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
-}
-
+/* Right column: image */
 .greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Resume anchor button style */
+.resume-button {
+    background-color: $buttonColor;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: $buttonHover;
+}
+
+/* Wave emoji animation */
 .wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
 }
 
 @keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(12deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(9deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
-/* Media Query */
+/* ============================
+   Responsive Design
+============================ */
 @media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
+    .greeting-name {
+        font-size: 50px;
+    }
+
+    .greeting-summary {
+        font-size: 20px;
+    }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
-  }
+    .greeting-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .greeting-name {
+        font-size: 32px;
+    }
+
+    .greeting-summary {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .button-greeting-div {
+        justify-content: center;
+    }
+
+    .greeting-image-div {
+        height: auto;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 320px) {
-  .main {
-    width: auto;
-  }
+    .main {
+        width: 95%;
+    }
 }

@@ -1,105 +1,116 @@
 @import "../../_globalColor";
 
-.profile-image {
-  border-radius: 50%;
-  border: 0.5rem solid $githubProfileCardBorder;
-  margin-left: auto;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  box-shadow: $lightBoxShadow 0 30px 30px -30px;
-  transition: all 0.3s ease-out;
-}
-
-.profile-image:hover {
-  box-shadow: none;
+.contact-section {
+    padding: 3rem 1.5rem;
+    background-color: transparent;
 }
 
 .prof-title {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 400;
-}
-
-.location-div {
-  text-shadow: $githubProfileCardLocationTS;
-}
-
-.opp-div {
-  padding-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: $titleColor;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .row {
-  display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .main-content-profile {
-  flex: 80%;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-content-profile {
-  text-align: right;
-  flex: 20%;
-  max-width: 100%;
-  height: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    border: 5px solid $githubProfileCardBorder;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.blog-subtitle {
+    font-size: 1.05rem;
+    color: $subTitle;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .bio-text {
-  line-height: 30px;
-  font-size: 22px;
+    font-size: 1.1rem;
+    color: $textColor;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.location-div,
+.opp-div {
+    margin-bottom: 0.7rem;
 }
 
 .desc-prof {
-  line-height: 45px;
-  font-size: 19px;
-}
-
-.subTitle {
-  color: $subTitle;
-}
-
-@media (max-width: 768px) {
-  .row {
+    font-size: 0.95rem;
+    color: $textColor;
     display: flex;
-    flex-direction: column;
-  }
+    align-items: center;
+    gap: 0.4rem;
+}
 
-  .main-content-profile {
-    text-align: center;
-    order: 2;
-  }
+/* Dark mode fix */
+.dark-mode .prof-title,
+.dark-mode .bio-text,
+.dark-mode .desc-prof {
+    color: $textColorDark !important;
+}
 
-  .bio-text {
-    font-size: 16px;
-  }
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-  .image-content-profile {
-    margin-left: auto;
-    margin-right: auto;
-    order: 1;
-  }
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
 
-  .desc-prof {
-    line-height: 30px;
-    font-size: 16px;
-  }
+    .prof-title {
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
+    }
 
-  .profile-image {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-  }
+    .bio-text {
+        font-size: 0.95rem;
+    }
 
-  .profile-image:hover {
-    box-shadow: $lightBoxShadow 0 50px 50px -50px;
-    transition: 0.3s ease-out;
-  }
-
-  .prof-title {
-    padding-bottom: 1rem;
-    font-size: 32px;
-    text-align: center;
-  }
+    .desc-prof {
+        font-size: 0.85rem;
+    }
 }

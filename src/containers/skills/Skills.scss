@@ -1,64 +1,143 @@
 @import "../../_globalColor";
 
+/* === Layout === */
 .skills-main-div {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.skills-text-div {
-  margin-left: 50px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 30px;
 }
 
+/* === Image Styling === */
 .skills-image-div > img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.skills-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
-.subTitle {
-  color: $subTitle;
-}
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .skills-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
+/* === Text Block === */
+.skills-text-div {
+    margin-left: 50px;
+    display: flex;
     flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
+    justify-content: center;
+}
+
+/* === Headings === */
+.skills-heading {
+    font-size: 56px;
+    font-weight: 700;
+    color: $titleColor;
+    margin-bottom: 1.2rem;
+}
+
+.dark-mode .skills-heading {
+    color: $textColorDark;
+}
+
+/* === Subtitle (if used) === */
+.skills-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: $subTitle;
+    margin-bottom: 1.5rem;
+}
+
+.dark-mode .skills-subtitle {
+    color: $textColorDark;
+}
+
+/* === Bullet Points (your emoji + line) === */
+.skills-text-bullet {
     font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
-  }
+    color: $textColor;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.dark-mode .skills-text-bullet {
+    color: $textColorDark;
+}
+
+/* === Fallback for old class (subTitle) if still used === */
+.subTitle {
+    color: $textColor;
+    font-weight: 500;
+}
+
+.dark-mode .subTitle {
+    color: $textColorDark;
+}
+
+/* === Responsive Design === */
+@media (max-width: 1380px) {
+    .skills-heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-main-div {
+        flex-direction: column;
+    }
+
+    .skills-text-div {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .skills-heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .skills-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .skills-text-bullet {
+        font-size: 15px;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .skills-image-div {
+        order: 2;
+    }
+}
+.skills-heading {
+    font-size: 56px;
+    font-weight: 700;
+    color: #222222 !important;
+    margin-bottom: 1rem;
+}
+
+.dark-mode .skills-heading {
+    color: #ffffff !important;
+}
+
+.skills-bullets p {
+    color: $textColor; // Normal mode
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dark-mode .skills-bullets p {
+    color: $textColorDark !important; // Dark mode forcefully
 }
