@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/suyash-portfolio/static/css/main.89cf42d2.css",
+    "main.js": "/suyash-portfolio/static/js/main.084a586d.js",
+    "static/css/769.58f3ecc5.chunk.css": "/suyash-portfolio/static/css/769.58f3ecc5.chunk.css",
+    "static/js/769.c636a84c.chunk.js": "/suyash-portfolio/static/js/769.c636a84c.chunk.js",
+    "static/media/myPhoto.png": "/suyash-portfolio/static/media/myPhoto.024ca2cf677cec4b0c49.png",
+    "static/media/contactIllustration.png": "/suyash-portfolio/static/media/contactIllustration.c34762d4fd56abb74ef6.png",
+    "static/media/project3.png": "/suyash-portfolio/static/media/project3.b74934882003593968ba.png",
+    "static/media/project4.png": "/suyash-portfolio/static/media/project4.b4c993e811f39e435ce6.png",
+    "static/media/project2.png": "/suyash-portfolio/static/media/project2.005f68275b8235afbb5b.png",
+    "static/media/Montserrat-Regular.ttf": "/suyash-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/project1.png": "/suyash-portfolio/static/media/project1.1fb06bb533d1f917685d.png",
+    "static/media/tcsLogo.png": "/suyash-portfolio/static/media/tcsLogo.1aaa1745da5992fa1b72.png",
+    "static/media/Agustina.woff": "/suyash-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/tcs.png": "/suyash-portfolio/static/media/tcs.3f4e72de05f1b7e2867d.png",
+    "static/media/polito.png": "/suyash-portfolio/static/media/polito.f081e4d95ea425d414c4.png",
+    "static/media/almaLogo.png": "/suyash-portfolio/static/media/almaLogo.2d7ea342821f8b47b164.png",
+    "static/media/johnsonLogo.png": "/suyash-portfolio/static/media/johnsonLogo.6907b69f19461762d8d7.png",
+    "static/media/hpeLogo.png": "/suyash-portfolio/static/media/hpeLogo.b1b39b3eff0da6e2cb4c.png",
+    "static/media/srmLogo.png": "/suyash-portfolio/static/media/srmLogo.ac86a5623c5d893b51cb.png",
+    "static/media/skill.svg": "/suyash-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "index.html": "/suyash-portfolio/index.html",
+    "main.89cf42d2.css.map": "/suyash-portfolio/static/css/main.89cf42d2.css.map",
+    "main.084a586d.js.map": "/suyash-portfolio/static/js/main.084a586d.js.map",
+    "769.58f3ecc5.chunk.css.map": "/suyash-portfolio/static/css/769.58f3ecc5.chunk.css.map",
+    "769.c636a84c.chunk.js.map": "/suyash-portfolio/static/js/769.c636a84c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89cf42d2.css",
+    "static/js/main.084a586d.js"
+  ]
+}
