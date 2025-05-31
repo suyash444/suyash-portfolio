@@ -5,8 +5,9 @@
     "\\src\\assets",
     "\\src\\components",
     "\\src\\components\\header",
-    "\\src\\containers"
+    "\\src\\containers",
+    "\\src\\containers\\contact"
   ],
-  "SelectedNode": "\\src\\components\\header\\Header.js",
+  "SelectedNode": "\\src\\containers\\contact\\Contact.scss",
   "PreviewInSolutionExplorer": false
 }

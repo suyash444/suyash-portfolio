@@ -63,7 +63,7 @@ const educationInfo = {
         {
             schoolName: "SRM University, Chennai",
             logo: require("./assets/images/srmLogo.png"),
-            subHeader: "B.Tech in Computer Science",
+            subHeader: "B.Tech in Computer Science & Engineering",
             duration: "2015 - 2019",
             desc: "Graduated with distinction and participated in multiple cloud/data science projects.",
             descBullets: [
@@ -157,7 +157,7 @@ const bigProjects = {
         },
         {
             image: require("./assets/images/project2.png"),
-            projectName: "TinyML - Wake Word Detection",
+            projectName: "TinyML - Visual Wake Word Detection",
             projectDesc:
                 "Deployed a lightweight CNN model for visual wake word detection on resource-constrained devices.",
             footerLink: [
