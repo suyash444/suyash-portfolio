@@ -6,6 +6,7 @@ import { Fade } from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import contactIllustration from "../../assets/images/contactIllustration.png"; // <-- Added static import
 
 export default function Contact() {
     const { isDark } = useContext(StyleContext);
@@ -52,7 +53,7 @@ export default function Contact() {
                             <DisplayLottie animationData={email} />
                         ) : (
                             <img
-                                src={require("../../assets/images/contactIllustration.png")}
+                                src={contactIllustration} // <-- Updated to use the static import
                                 alt="Contact illustration"
                                 className="profile-photo"
                             />
