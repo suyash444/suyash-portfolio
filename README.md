@@ -1,4 +1,4 @@
-# Suyash Singh Portfolio 🚀
+# Suyash Singh Portfolio 
 
 A clean, modern, and fully responsive portfolio website showcasing my work as a **Data Scientist, Machine Learning Engineer, and Cloud DevOps Professional**.
 
