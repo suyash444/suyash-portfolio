@@ -2,20 +2,20 @@
 
 A clean, modern, and fully responsive portfolio website showcasing my work as a **Data Scientist, Machine Learning Engineer, and Cloud DevOps Professional**.
 
-## Features
+# Features
 
 ✅ Dark and Light Mode  
 ✅ Projects, Skills, Education, and Certifications  
 ✅ Dynamic Resume Download  
 ✅ Contact and Social Links
 
-## Technologies Used
+# Technologies Used
 
 - React.js
 - SCSS
 - GitHub Pages
 
-## Setup
+# Setup
 
 ```bash
 git clone <your-repo-url>
