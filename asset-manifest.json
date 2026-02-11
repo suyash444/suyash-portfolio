@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/suyash-portfolio/static/css/main.0a6ed535.css",
-    "main.js": "/suyash-portfolio/static/js/main.d41bdd87.js",
+    "main.css": "/suyash-portfolio/static/css/main.e20d648a.css",
+    "main.js": "/suyash-portfolio/static/js/main.e3f1437e.js",
     "static/css/769.58f3ecc5.chunk.css": "/suyash-portfolio/static/css/769.58f3ecc5.chunk.css",
     "static/js/769.b1555b2c.chunk.js": "/suyash-portfolio/static/js/769.b1555b2c.chunk.js",
     "static/media/myPhoto.png": "/suyash-portfolio/static/media/myPhoto.024ca2cf677cec4b0c49.png",
@@ -13,6 +13,7 @@
     "static/media/project1.png": "/suyash-portfolio/static/media/project1.1fb06bb533d1f917685d.png",
     "static/media/tcsLogo.png": "/suyash-portfolio/static/media/tcsLogo.1aaa1745da5992fa1b72.png",
     "static/media/Agustina.woff": "/suyash-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/teklogLogo.png": "/suyash-portfolio/static/media/teklogLogo.cbf0920821efc20c3a3b.png",
     "static/media/tcs.png": "/suyash-portfolio/static/media/tcs.3f4e72de05f1b7e2867d.png",
     "static/media/polito.png": "/suyash-portfolio/static/media/polito.f081e4d95ea425d414c4.png",
     "static/media/almaLogo.png": "/suyash-portfolio/static/media/almaLogo.2d7ea342821f8b47b164.png",
@@ -21,13 +22,13 @@
     "static/media/srmLogo.png": "/suyash-portfolio/static/media/srmLogo.ac86a5623c5d893b51cb.png",
     "static/media/skill.svg": "/suyash-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/suyash-portfolio/index.html",
-    "main.0a6ed535.css.map": "/suyash-portfolio/static/css/main.0a6ed535.css.map",
-    "main.d41bdd87.js.map": "/suyash-portfolio/static/js/main.d41bdd87.js.map",
+    "main.e20d648a.css.map": "/suyash-portfolio/static/css/main.e20d648a.css.map",
+    "main.e3f1437e.js.map": "/suyash-portfolio/static/js/main.e3f1437e.js.map",
     "769.58f3ecc5.chunk.css.map": "/suyash-portfolio/static/css/769.58f3ecc5.chunk.css.map",
     "769.b1555b2c.chunk.js.map": "/suyash-portfolio/static/js/769.b1555b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a6ed535.css",
-    "static/js/main.d41bdd87.js"
+    "static/css/main.e20d648a.css",
+    "static/js/main.e3f1437e.js"
   ]
 }
