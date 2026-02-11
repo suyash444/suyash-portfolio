@@ -13,9 +13,10 @@ const greeting = {
     username: "Suyash Singh",
     title: "Suyash Singh",
     subTitle:
-        "Data Scientist and Cloud Engineer passionate about building data-driven solutions with Machine Learning, Big Data, and Cloud Infrastructure (GCP, Azure). Experienced in real-time anomaly detection and predictive maintenance systems.",
+        "Software Engineer and Data Scientist with 4+ years of experience in Python, C#, ML, and Cloud (GCP, AWS). Building AI-powered logistics solutions at Teklog Srl, Milan.",
     resumeLink:
-        "https://drive.google.com/uc?export=download&id=1dB5wDT9ky7AxHqCrG9WEqEg-oW6f7ita"
+        "https://drive.google.com/uc?export=download&id=147ZGIFfwaYCcDEw0ExoNrgtONbK-x_2-",
+    displayGreeting: true
 };
 
 const socialMediaLinks = {
@@ -27,21 +28,24 @@ const socialMediaLinks = {
 
 const skillsSection = {
     title: "My Expertise",
-    subTitle: "Data Science | Machine Learning | Cloud DevOps",
+    subTitle: "AI/ML Engineering | Full-Stack Development | Cloud Architecture",
     skills: [
-        "✅ Develop scalable machine learning models and data pipelines.",
-        "✅ Build cloud-native solutions on GCP and Azure.",
-        "✅ Automate deployments using CI/CD and Infrastructure as Code."
+        "🚀 Build AI-powered solutions for logistics & warehouse optimization",
+        "💻 Develop robust APIs using Python & C# (.NET) with RESTful architecture",
+        "☁️ Deploy scalable applications with Docker, Kubernetes & Cloud platforms",
+        "📊 Design ML pipelines for real-time data processing & predictive analytics"
     ],
     softwareSkills: [
         { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+        { skillName: "C#/.NET", fontAwesomeClassname: "fab fa-microsoft" },
         { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
-        { skillName: "GCP", fontAwesomeClassname: "fab fa-google" },
-        { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
-        { skillName: "Git", fontAwesomeClassname: "fab fa-git" },
         { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
-        { skillName: "Terraform", fontAwesomeClassname: "fas fa-code" },
-        { skillName: "Power BI", fontAwesomeClassname: "fas fa-chart-bar" }
+        { skillName: "Kubernetes", fontAwesomeClassname: "fas fa-dharmachakra" },
+        { skillName: "GCP", fontAwesomeClassname: "fab fa-google" },
+        { skillName: "Azure", fontAwesomeClassname: "fab fa-windows" },
+        { skillName: "Git", fontAwesomeClassname: "fab fa-git" },
+        { skillName: "REST API", fontAwesomeClassname: "fas fa-plug" },
+        { skillName: "Machine Learning", fontAwesomeClassname: "fas fa-brain" }
     ],
     display: true
 };
@@ -94,21 +98,29 @@ export const openSource = {
 
 export const resumeSection = {
     display: true,
-    resumeLink: "https://drive.google.com/uc?export=download&id=1dB5wDT9ky7AxHqCrG9WEqEg-oW6f7ita"
+    resumeLink: "https://drive.google.com/uc?export=download&id=147ZGIFfwaYCcDEw0ExoNrgtONbK-x_2-"
 };
 
 
 
 const workExperiences = {
-    display: true,
-    experience: [
-        {
-            role: "Data Scientist Intern",
-            company: "Johnson Electric",
-            companylogo: require("./assets/images/johnsonLogo.png"),
-            date: "2024 – 2025",
-            desc: "Developed ML pipelines for anomaly detection in automotive cooling systems using real-time sensor diagnostics."
-        },
+display: true,
+experience: [
+    {
+        role: "AI/ML Engineer",
+        company: "Teklog Srl",
+        companylogo: require("./assets/images/teklogLogo.png"),
+        date: "July 2025 – Present",
+        location: "Milan, Italy",
+        desc: "Building AI-powered logistics solutions using Python & C# (.NET). Developing ML models to optimize delivery routes and warehouse operations, reducing costs and improving efficiency. Deploying scalable applications with Docker & Kubernetes."
+    },
+    {
+        role: "Data Scientist Intern",
+        company: "Johnson Electric",
+        companylogo: require("./assets/images/johnsonLogo.png"),
+        date: "2024 – 2025",
+        desc: "Developed ML pipelines for anomaly detection in automotive cooling systems using real-time sensor diagnostics."
+    },
         {
             role: "Data Scientist Intern",
             company: "AlmaBetter",

@@ -4,41 +4,41 @@
 .skills-main-div {
     display: flex;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding-top: 2rem;
 }
 
 .skills-main-div > * {
     flex: 1;
     min-width: 300px;
+    max-width: 900px;
     margin-bottom: 30px;
-}
-
-/* === Image Styling === */
-.skills-image-div > img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 /* === Text Block === */
 .skills-text-div {
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
 }
 
 /* === Headings === */
 .skills-heading {
     font-size: 56px;
-    font-weight: 700;
+    font-weight: 800 !important;
     color: $titleColor;
     margin-bottom: 1.2rem;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
 }
 
 .dark-mode .skills-heading {
@@ -117,19 +117,8 @@
         order: 2;
     }
 }
-.skills-heading {
-    font-size: 56px;
-    font-weight: 700;
-    color: #222222 !important;
-    margin-bottom: 1rem;
-}
-
-.dark-mode .skills-heading {
-    color: #ffffff !important;
-}
-
 .skills-bullets p {
-    color: $textColor; // Normal mode
+    color: $textColor;
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 0.75rem;
@@ -139,5 +128,5 @@
 }
 
 .dark-mode .skills-bullets p {
-    color: $textColorDark !important; // Dark mode forcefully
+    color: $textColorDark !important;
 }

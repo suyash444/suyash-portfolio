@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { Fade } from "react-reveal";
 import "./Greeting.scss";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { illustration, greeting } from "../../portfolio";
+import { greeting } from "../../portfolio";
 import myPhoto from "../../assets/images/myPhoto.png";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -26,10 +25,8 @@ export default function Greeting() {
                             </h1>
 
                             <p className={`greeting-summary ${isDark ? "dark-mode" : ""}`}>
-                                Leveraging data to build smart, scalable solutions — skilled in Machine Learning, Cloud Pipelines, and Data Engineering.
+                                Software Engineer & Data Scientist with 4+ years of experience building scalable solutions using Python, C#, Machine Learning, and Cloud platforms (GCP, AWS). Currently at Teklog Srl, Milan.
                             </p>
-
-                            <SocialMedia />
 
                             <div className="button-greeting-div">
                                 <Button text="Let's Connect" href="#contact" />

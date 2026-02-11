@@ -17,19 +17,22 @@
     font-size: 3.5rem;
     font-weight: 600;
     color: $titleColor;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: left;
+    line-height: 1.3;
 }
 
 /* Subtitle */
 .contact-subtitle {
-    font-size: 1rem;
-    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-transform: none;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     color: $subTitle;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     text-align: left;
+    line-height: 1.6;
 }
 
 /* Contact Info Block */
@@ -40,13 +43,15 @@
 /* Phone & Email Links */
 .contact-detail,
 .contact-detail-email {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: $subTitle;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    line-height: 1.5;
 }
 
 .contact-detail:hover,

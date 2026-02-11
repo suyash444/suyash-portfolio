@@ -60,7 +60,19 @@ export default function ExperienceCard({ cardInfo }) {
 
             <div className="experience-text-details">
                 <h4 className="experience-text-role">{cardInfo.role}</h4>
-                <h5 className="experience-text-date">{cardInfo.date}</h5>
+                <div className="experience-meta">
+                    <h5 className="experience-text-date">
+                        {cardInfo.date}
+                        {cardInfo.date?.toLowerCase().includes("present") && (
+                            <span className="current-badge">Current</span>
+                        )}
+                    </h5>
+                    {cardInfo.location && (
+                        <span className="experience-location">
+                            <i className="fas fa-map-marker-alt"></i> {cardInfo.location}
+                        </span>
+                    )}
+                </div>
                 <p className="experience-text-desc">{cardInfo.desc}</p>
                 <GetDescBullets descBullets={cardInfo.descBullets} />
             </div>
