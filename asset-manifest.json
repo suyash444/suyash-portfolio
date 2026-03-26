@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/suyash-portfolio/static/css/main.98f2baf8.css",
+    "main.css": "/suyash-portfolio/static/css/main.4b6e21e4.css",
     "main.js": "/suyash-portfolio/static/js/main.773c6102.js",
     "static/css/769.3202b739.chunk.css": "/suyash-portfolio/static/css/769.3202b739.chunk.css",
     "static/js/769.b1555b2c.chunk.js": "/suyash-portfolio/static/js/769.b1555b2c.chunk.js",
@@ -22,13 +22,13 @@
     "static/media/srmLogo.png": "/suyash-portfolio/static/media/srmLogo.ac86a5623c5d893b51cb.png",
     "static/media/skill.svg": "/suyash-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/suyash-portfolio/index.html",
-    "main.98f2baf8.css.map": "/suyash-portfolio/static/css/main.98f2baf8.css.map",
+    "main.4b6e21e4.css.map": "/suyash-portfolio/static/css/main.4b6e21e4.css.map",
     "main.773c6102.js.map": "/suyash-portfolio/static/js/main.773c6102.js.map",
     "769.3202b739.chunk.css.map": "/suyash-portfolio/static/css/769.3202b739.chunk.css.map",
     "769.b1555b2c.chunk.js.map": "/suyash-portfolio/static/js/769.b1555b2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98f2baf8.css",
+    "static/css/main.4b6e21e4.css",
     "static/js/main.773c6102.js"
   ]
 }
