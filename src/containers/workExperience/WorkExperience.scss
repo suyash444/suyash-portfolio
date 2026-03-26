@@ -2,54 +2,54 @@
 
 /* === Heading === */
 .experience-heading {
-    font-size: 56px;
-    font-weight: 700;
-    color: $titleColor;
-    text-align: center;
-    margin-bottom: 6rem;
+  font-size: 56px;
+  font-weight: 700;
+  color: $titleColor;
+  text-align: center;
+  margin-bottom: 6rem;
 }
 
 .dark-mode .experience-heading {
-    color: $textColorDark;
+  color: $textColorDark;
 }
 
 /* === Container === */
 .experience-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 1rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
 /* === Grid for Experience Cards === */
 .experience-cards-div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.5rem;
 }
 
 /* === Responsive Adjustments === */
 @media (max-width: 1380px) {
-    .experience-heading {
-        font-size: 40px;
-    }
+  .experience-heading {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 768px) {
-    .experience-heading {
-        font-size: 30px;
-        text-align: center;
-    }
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
 
-    .experience-container {
-        padding: 0 0.5rem;
-    }
+  .experience-container {
+    padding: 0 0.5rem;
+  }
 }
 .experience-roundedimg {
-    width: 6rem; // Increase this value for a larger image (e.g. 7rem or 8rem)
-    height: 6rem;
-    object-fit: contain; // Or use "cover" if you want it to fill more
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 6rem; // Increase this value for a larger image (e.g. 7rem or 8rem)
+  height: 6rem;
+  object-fit: contain; // Or use "cover" if you want it to fill more
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }

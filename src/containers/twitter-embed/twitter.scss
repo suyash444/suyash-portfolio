@@ -1,37 +1,37 @@
 @import "../../_globalColor";
 
 .tw-main-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
-    background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: transparent;
 }
 
 .twitter-embed-wrapper {
-    max-width: 600px;
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Center fallback loader too */
 .centerContent {
-    text-align: center;
-    margin: 0 auto;
-    padding: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
 /* Optional overrides for Twitter embed header */
 .timeline-Header-title {
-    font-size: 28px !important;
-    font-weight: 600 !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-    .twitter-embed-wrapper {
-        max-width: 95%;
-    }
+  .twitter-embed-wrapper {
+    max-width: 95%;
+  }
 }

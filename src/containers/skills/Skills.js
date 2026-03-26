@@ -1,32 +1,32 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { skillsSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {skillsSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
-    const { isDark } = useContext(StyleContext);
-    if (!skillsSection.display) return null;
+  const {isDark} = useContext(StyleContext);
+  if (!skillsSection.display) return null;
 
-    return (
-        <div className={`main ${isDark ? "dark-mode" : ""}`} id="skills">
-            <div className="skills-main-div">
-                <Fade bottom duration={1000}>
-                    <div className="skills-text-div">
-                        <h1 className="skills-heading">{skillsSection.title}</h1>
-                        <p className="skills-subtitle">{skillsSection.subTitle}</p>
+  return (
+    <div className={`main ${isDark ? "dark-mode" : ""}`} id="skills">
+      <div className="skills-main-div">
+        <Fade bottom duration={1000}>
+          <div className="skills-text-div">
+            <h1 className="skills-heading">{skillsSection.title}</h1>
+            <p className="skills-subtitle">{skillsSection.subTitle}</p>
 
-                        <SoftwareSkill />
+            <SoftwareSkill />
 
-                        <div className="skills-bullets">
-                            {skillsSection.skills.map((line, i) => (
-                                <p key={i}>{line}</p>
-                            ))}
-                        </div>
-                    </div>
-                </Fade>
+            <div className="skills-bullets">
+              {skillsSection.skills.map((line, i) => (
+                <p key={i}>{line}</p>
+              ))}
             </div>
-        </div>
-    );
+          </div>
+        </Fade>
+      </div>
+    </div>
+  );
 }

@@ -1,49 +1,57 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import { achievementSection } from "../../portfolio";
-import { Fade } from "react-reveal";
+import {achievementSection} from "../../portfolio";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Achievement() {
-    const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
-    if (!achievementSection.display) return null;
+  if (!achievementSection.display) return null;
 
-    return (
-        <Fade bottom duration={1000} distance="20px">
-            <section className="main" id="achievements" aria-label="Achievements Section">
-                <div className="achievement-main-div">
-                    <div className="achievement-header">
-                        <h1
-                            className={`heading achievement-heading ${isDark ? "dark-mode" : ""}`}
-                        >
-                            {achievementSection.title}
-                        </h1>
-                        <p
-                            className={`subTitle achievement-subtitle ${isDark ? "dark-mode" : ""}`}
-                        >
-                            {achievementSection.subtitle}
-                        </p>
-                    </div>
+  return (
+    <Fade bottom duration={1000} distance="20px">
+      <section
+        className="main"
+        id="achievements"
+        aria-label="Achievements Section"
+      >
+        <div className="achievement-main-div">
+          <div className="achievement-header">
+            <h1
+              className={`heading achievement-heading ${
+                isDark ? "dark-mode" : ""
+              }`}
+            >
+              {achievementSection.title}
+            </h1>
+            <p
+              className={`subTitle achievement-subtitle ${
+                isDark ? "dark-mode" : ""
+              }`}
+            >
+              {achievementSection.subtitle}
+            </p>
+          </div>
 
-                    <div className="achievement-cards-div">
-                        {achievementSection.achievementsCards.map((card, i) => (
-                            <AchievementCard
-                                key={card.title || i}
-                                isDark={isDark}
-                                cardInfo={{
-                                    title: card.title,
-                                    description: card.subtitle,
-                                    image: card.image,
-                                    imageAlt: card.imageAlt,
-                                    footer: card.footerLink,
-                                }}
-                            />
-                        ))}
-                    </div>
-                </div>
-            </section>
-        </Fade>
-    );
+          <div className="achievement-cards-div">
+            {achievementSection.achievementsCards.map((card, i) => (
+              <AchievementCard
+                key={card.title || i}
+                isDark={isDark}
+                cardInfo={{
+                  title: card.title,
+                  description: card.subtitle,
+                  image: card.image,
+                  imageAlt: card.imageAlt,
+                  footer: card.footerLink
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    </Fade>
+  );
 }

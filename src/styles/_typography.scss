@@ -1,14 +1,16 @@
 @import "./_globalColor";
 
 /* === Global Title Styling === */
-h1, h2, h3,
+h1,
+h2,
+h3,
 .heading,
 .project-title,
 .education-heading,
 .achievement-heading,
 .experience-heading,
 .contact-title {
-    color: $titleColor;
+  color: $titleColor;
 }
 
 .dark-mode h1,
@@ -20,6 +22,5 @@ h1, h2, h3,
 .dark-mode .achievement-heading,
 .dark-mode .experience-heading,
 .dark-mode .contact-title {
-    color: $textColorDark;
+  color: $textColorDark;
 }
-

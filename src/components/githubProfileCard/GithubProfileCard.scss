@@ -1,116 +1,116 @@
 @import "../../_globalColor";
 
 .contact-section {
-    padding: 3rem 1.5rem;
-    background-color: transparent;
+  padding: 3rem 1.5rem;
+  background-color: transparent;
 }
 
 .prof-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: $titleColor;
-    text-align: center;
-    margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: $titleColor;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .main-content-profile {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .image-content-profile {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    min-width: 200px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
 }
 
 .profile-image {
-    border-radius: 50%;
-    border: 5px solid $githubProfileCardBorder;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 50%;
+  border: 5px solid $githubProfileCardBorder;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .profile-image:hover {
-    transform: scale(1.03);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 .blog-subtitle {
-    font-size: 1.05rem;
-    color: $subTitle;
-    margin-bottom: 1rem;
-    font-weight: 500;
+  font-size: 1.05rem;
+  color: $subTitle;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .bio-text {
-    font-size: 1.1rem;
-    color: $textColor;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    font-style: italic;
-    font-weight: 500;
+  font-size: 1.1rem;
+  color: $textColor;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .location-div,
 .opp-div {
-    margin-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .desc-prof {
-    font-size: 0.95rem;
-    color: $textColor;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+  font-size: 0.95rem;
+  color: $textColor;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 /* Dark mode fix */
 .dark-mode .prof-title,
 .dark-mode .bio-text,
 .dark-mode .desc-prof {
-    color: $textColorDark !important;
+  color: $textColorDark !important;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .profile-image {
-        width: 140px;
-        height: 140px;
-    }
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
 
-    .prof-title {
-        font-size: 1.9rem;
-        margin-bottom: 1.2rem;
-    }
+  .prof-title {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+  }
 
-    .bio-text {
-        font-size: 0.95rem;
-    }
+  .bio-text {
+    font-size: 0.95rem;
+  }
 
-    .desc-prof {
-        font-size: 0.85rem;
-    }
+  .desc-prof {
+    font-size: 0.85rem;
+  }
 }

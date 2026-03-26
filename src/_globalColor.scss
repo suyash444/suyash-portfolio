@@ -70,7 +70,11 @@ $darkBoxShadow: rgba(255, 255, 255, 0.1);
 $darkBoxShadow2: rgba(255, 255, 255, 0.05);
 
 // 🌈 Gradients - Experience Cards
-$experienceCardBlurredDivLG: linear-gradient(135deg, rgba(99, 102, 241, 0.8), rgba(139, 92, 246, 0.8));
+$experienceCardBlurredDivLG: linear-gradient(
+  135deg,
+  rgba(99, 102, 241, 0.8),
+  rgba(139, 92, 246, 0.8)
+);
 $experienceCardBannerLG: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
 // 🟪 UI Elements - Modern & Clean
@@ -99,104 +103,121 @@ $stackoverflow: #f48024;
 $instagram: #e4405f;
 $kaggle: #20beff;
 
-
 /* === 🎨 TYPOGRAPHY (GLOBAL HEADING + TEXT COLOR) === */
 
 // 🔠 Headings - Bold & Modern
-h1, h2, h3, h4, h5, h6 {
-    color: $titleColor;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $titleColor;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    background: $gradientPrimary;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  background: $gradientPrimary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 // 📝 Subtitles - Clean & Readable
 .subTitle,
 .contact-subtitle,
 .achievement-subtitle {
-    color: $subTitle;
-    font-weight: 500;
-    line-height: 1.6;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+  color: $subTitle;
+  font-weight: 500;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 // 🟣 Skill bullet lines - Modern Style
 .skills-text-bullet {
-    color: $textColor;
-    font-weight: 500;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    transition: transform 0.3s ease;
-    
-    &:hover {
-        transform: translateX(5px);
-    }
+  color: $textColor;
+  font-weight: 500;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(5px);
+  }
 }
 
 /* === 🌙 DARK MODE OVERRIDES === */
 
 .dark-mode {
-    background: linear-gradient(180deg, $darkBackground 0%, $darkBackground2 100%);
-    
-    .heading,
-    .project-title,
-    .education-heading,
-    .achievement-heading,
-    .experience-heading,
-    .contact-title {
-        color: $textColorDark;
-    }
+  background: linear-gradient(
+    180deg,
+    $darkBackground 0%,
+    $darkBackground2 100%
+  );
 
-    h1 {
-        background: $gradientCool;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
+  .heading,
+  .project-title,
+  .education-heading,
+  .achievement-heading,
+  .experience-heading,
+  .contact-title {
+    color: $textColorDark;
+  }
 
-    .subTitle,
-    .contact-subtitle,
-    .achievement-subtitle {
-        color: $textColorDark;
-        opacity: 0.9;
-    }
+  h1 {
+    background: $gradientCool;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-    .skills-text-bullet {
-        color: $textColorDark;
-    }
+  .subTitle,
+  .contact-subtitle,
+  .achievement-subtitle {
+    color: $textColorDark;
+    opacity: 0.9;
+  }
+
+  .skills-text-bullet {
+    color: $textColorDark;
+  }
 }
 
 .dark-mode {
-    h1, h2, h3, h4, h5, h6,
-    .heading, .project-title, .education-heading,
-    .achievement-heading, .experience-heading, .contact-title {
-        color: $textColorDark !important;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .heading,
+  .project-title,
+  .education-heading,
+  .achievement-heading,
+  .experience-heading,
+  .contact-title {
+    color: $textColorDark !important;
+  }
 
-    .subTitle,
-    .contact-subtitle,
-    .achievement-subtitle {
-        color: $textColorDark !important;
-        opacity: 0.9;
-    }
+  .subTitle,
+  .contact-subtitle,
+  .achievement-subtitle {
+    color: $textColorDark !important;
+    opacity: 0.9;
+  }
 
-    .skills-text-bullet {
-        color: $textColorDark !important;
-    }
+  .skills-text-bullet {
+    color: $textColorDark !important;
+  }
 }

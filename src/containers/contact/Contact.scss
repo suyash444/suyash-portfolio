@@ -1,84 +1,84 @@
 @import "../../_globalColor";
 
 .contact-div-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .contact-div-main > * {
-    flex: 1;
+  flex: 1;
 }
 
 /* Main Title */
 .contact-title {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: $titleColor;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    line-height: 1.3;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: $titleColor;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  line-height: 1.3;
 }
 
 /* Subtitle */
 .contact-subtitle {
-    font-size: 1.1rem;
-    text-transform: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    color: $subTitle;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-align: left;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  text-transform: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: $subTitle;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: left;
+  line-height: 1.6;
 }
 
 /* Contact Info Block */
 .contact-text-div {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 /* Phone & Email Links */
 .contact-detail,
 .contact-detail-email {
-    display: block;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: $subTitle;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    line-height: 1.5;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $subTitle;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.5;
 }
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-    color: $textColor;
-    text-shadow: 1px 1px 2px $contactDetailHoverTS;
+  color: $textColor;
+  text-shadow: 1px 1px 2px $contactDetailHoverTS;
 }
 
 /* Section Margin */
 .contact-margin-top {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 /* Lottie/Image Styles */
 .contact-image-div {
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center vertically if needed */
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 1rem; /* Add a bit of padding for breathing room */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center vertically if needed */
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1rem; /* Add a bit of padding for breathing room */
 }
 
 .contact-image-div > img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Dark Mode Support */
@@ -86,36 +86,36 @@
 .dark-mode .contact-subtitle,
 .dark-mode .contact-detail,
 .dark-mode .contact-detail-email {
-    color: $textColorDark !important;
+  color: $textColorDark !important;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .contact-div-main {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .contact-div-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .contact-title {
-        font-size: 2.5rem;
-        text-align: center;
-    }
+  .contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 
-    .contact-subtitle {
-        font-size: 0.95rem;
-        text-align: center;
-    }
+  .contact-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+  }
 
-    .contact-detail,
-    .contact-detail-email {
-        font-size: 1.1rem;
-    }
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 1.1rem;
+  }
 
-    .contact-image-div {
-        margin-top: 1rem;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+  .contact-image-div {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }

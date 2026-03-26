@@ -1,9 +1,11 @@
 name: Check Format
 on:
   push:
+    branches:
+      - master
   pull_request:
-      branches:
-        - master
+    branches:
+      - master
 jobs:
   check-format:
     runs-on: ubuntu-latest

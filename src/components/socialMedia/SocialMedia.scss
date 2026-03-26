@@ -1,86 +1,86 @@
 ﻿@import "../../_globalColor";
 
 .social-media-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin: 1rem auto 2rem auto;
-    gap: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 1rem auto 2rem auto;
+  gap: 0.75rem;
 }
 
 /* Base Button Style */
 .icon-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.6rem;
-    height: 2.6rem;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    color: white;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
 
 .icon-button i {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Platform-specific colors */
 .github {
-    background-color: $github;
+  background-color: $github;
 }
 
 .linkedin {
-    background-color: $linkedin;
+  background-color: $linkedin;
 }
 
 .gmail {
-    background-color: $google;
+  background-color: $google;
 }
 
 .gitlab {
-    background-color: $gitlab;
+  background-color: $gitlab;
 }
 
 .facebook {
-    background-color: $faceBook;
+  background-color: $faceBook;
 }
 
 .instagram {
-    background-color: $instagram;
+  background-color: $instagram;
 }
 
 .twitter {
-    background-color: $twitter;
+  background-color: $twitter;
 }
 
 .medium {
-    background-color: $medium;
+  background-color: $medium;
 }
 
 .stackoverflow {
-    background-color: $stackoverflow;
+  background-color: $stackoverflow;
 }
 
 .kaggle {
-    background-color: $kaggle;
+  background-color: $kaggle;
 }
 
 /* Hover effect */
 .icon-button:hover {
-    transform: translateY(-3px);
-    background-color: $buttonColor !important;
-    color: #ffffff !important;
+  transform: translateY(-3px);
+  background-color: $buttonColor !important;
+  color: #ffffff !important;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .social-media-div {
-        justify-content: center;
-        gap: 0.75rem;
-    }
+  .social-media-div {
+    justify-content: center;
+    gap: 0.75rem;
+  }
 }

@@ -1,126 +1,126 @@
 @import "../../_globalColor";
 
 .repo-card-div {
-    background-color: $lightBackground2;
-    color: $githubRepoCardColor;
-    box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-    padding: 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 1px solid $lightBorder1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 200px;
+  background-color: $lightBackground2;
+  color: $githubRepoCardColor;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid $lightBorder1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
 }
 
 .repo-card-div:hover {
-    box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
+  box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
 }
 
 .repo-name-div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
 }
 
 .repo-svg {
-    margin-right: 0.5rem;
-    min-width: 16px;
-    fill: $githubRepoCardRepoNameColor;
+  margin-right: 0.5rem;
+  min-width: 16px;
+  fill: $githubRepoCardRepoNameColor;
 }
 
 .repo-name {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: $githubRepoCardRepoNameColor;
-    line-height: 1.4;
-    margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: $githubRepoCardRepoNameColor;
+  line-height: 1.4;
+  margin: 0;
 }
 
 .repo-description {
-    color: $textColor;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-weight: 400;
+  color: $textColor;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 400;
 }
 
 .repo-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.875rem;
-    color: $githubRepoCardRepoCardStatsColor;
-    margin-top: auto;
-    flex-wrap: wrap;
-    gap: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: $githubRepoCardRepoCardStatsColor;
+  margin-top: auto;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
 .repo-left-stat {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .language-tag {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .language-color {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $githubRepoCardLanguageColorBG;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $githubRepoCardLanguageColorBG;
 }
 
 .repo-stat {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .repo-stat-icon {
-    fill: $githubRepoCardRepoCardStatsColor;
+  fill: $githubRepoCardRepoCardStatsColor;
 }
 
 .repo-right-stat p {
-    font-size: 0.8rem;
-    color: $githubRepoCardRepoCardStatsColor;
-    font-weight: 500;
+  font-size: 0.8rem;
+  color: $githubRepoCardRepoCardStatsColor;
+  font-weight: 500;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .repo-card-div {
-        padding: 1.2rem;
-    }
+  .repo-card-div {
+    padding: 1.2rem;
+  }
 
-    .repo-name {
-        font-size: 1.15rem;
-    }
+  .repo-name {
+    font-size: 1.15rem;
+  }
 
-    .repo-description {
-        font-size: 0.9rem;
-        -webkit-line-clamp: 2;
-    }
+  .repo-description {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 2;
+  }
 
-    .repo-stats {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
+  .repo-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 
-    .repo-left-stat {
-        gap: 0.5rem;
-    }
+  .repo-left-stat {
+    gap: 0.5rem;
+  }
 }
