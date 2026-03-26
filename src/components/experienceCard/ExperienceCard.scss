@@ -1,62 +1,107 @@
 @import "../../_globalColor";
 
+/* === ?? PREMIUM EXPERIENCE CARD - GLASSMORPHISM === */
+
 .experience-card {
     position: relative;
-    background-color: $lightBackground2;
-    border: 1px solid $lightBorder1;
-    border-radius: 10px;
-    box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $gradientPrimary;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: -1;
+        border-radius: 24px;
+    }
 }
 
 .experience-card:hover {
-    box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-    transform: scale(1.01);
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(99, 102, 241, 0.3);
+    
+    &::before {
+        opacity: 0.03;
+    }
 }
 
 .experience-card-dark {
-    background-color: $lightBackground1;
-    border: 1px solid $lightBorder1;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .experience-banner {
     position: relative;
-    height: 11rem;
-    border-radius: 10px 10px 0 0;
-    background: $experienceCardBannerLG;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150%;
+    height: 14rem;
+    border-radius: 24px 24px 0 0;
+    background: $gradientPrimary;
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+    }
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .experience-blurred_div {
     position: absolute;
     top: 0;
     left: 0;
-    height: 11rem;
+    height: 14rem;
     width: 100%;
-    border-radius: 10px 10px 0 0;
-    background: $experienceCardBlurredDivLG;
-    filter: blur(5px);
+    border-radius: 24px 24px 0 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
 }
 
 .experience-div-company {
     position: absolute;
     top: 0;
     left: 0;
-    height: 9rem;
+    height: 11rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .experience-text-company {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
     color: $lightBackground1;
     padding: 1.5rem;
     margin: 0;
@@ -64,38 +109,52 @@
     text-overflow: ellipsis;
     overflow: hidden;
     text-align: center;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
 }
 
 .experience-roundedimg {
     position: absolute;
-    top: 7rem;
+    top: 9rem;
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 8rem;
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+    border: 5px solid white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+    z-index: 3;
+    
+    &:hover {
+        transform: scale(1.1) rotate(5deg);
+    }
 }
 
 .experience-text-details {
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .experience-text-role {
-    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
     font-weight: 700;
     color: $titleColor;
     text-align: center;
     margin: 0;
     padding-top: 1.5rem;
+    background: $gradientPrimary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .experience-text-date {
-    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
     font-weight: 600;
     color: $textColor;
     text-align: center;
@@ -112,19 +171,22 @@
     color: white;
     font-size: 0.7rem;
     font-weight: 700;
-    padding: 0.25rem 0.6rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 20px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
     animation: pulse-badge 2s infinite;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
 @keyframes pulse-badge {
     0%, 100% {
-        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+        transform: scale(1);
     }
     50% {
-        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+        transform: scale(1.05);
     }
 }
 
@@ -132,90 +194,129 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
     padding-top: 1rem;
 }
 
 .experience-location {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: $subTitle;
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
+    font-weight: 500;
     
     i {
         color: #ef4444;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 }
 
 .experience-text-desc {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: $textColor;
-    padding: 0.8rem 0;
-    line-height: 1.6;
+    padding: 1rem 0;
+    line-height: 1.7;
+    font-weight: 400;
 }
 
 .experience-text-bullets {
-    padding-left: 1.2rem;
-    margin-top: 0.8rem;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
 }
 
 .experience-bullet {
     color: $textColor;
     font-size: 1rem;
-    line-height: 1.6rem;
-    margin-bottom: 0.5rem;
-    list-style-type: disc;
+    line-height: 1.8rem;
+    margin-bottom: 0.6rem;
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem;
+    
+    &::before {
+        content: '?';
+        position: absolute;
+        left: 0;
+        color: #6366f1;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
 }
 
-/* === Dark Mode Text === */
+/* === ?? Dark Mode === */
 .dark-mode {
+    .experience-card {
+        background: rgba(15, 23, 42, 0.8);
+        border-color: rgba(255, 255, 255, 0.1);
+        
+        &:hover {
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+        }
+    }
+    
+    .experience-text-role {
+        background: $gradientCool;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
     .experience-text-role,
     .experience-text-date,
     .experience-text-desc,
     .experience-bullet {
         color: $textColorDark !important;
     }
+    
+    .experience-roundedimg {
+        border-color: rgba(255, 255, 255, 0.2);
+    }
 }
 
-/* Media Queries */
+/* === ?? Responsive === */
 @media (max-width: 1380px) {
     .experience-text-role {
         padding-top: 0.5rem;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .experience-text-company {
-        font-size: 1.3rem;
-    }
-
-    .experience-text-date {
-        font-size: 1.1rem;
-    }
-
-    .experience-roundedimg {
-        width: 6.5rem;
-        height: 6.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .experience-text-role,
-    .experience-text-company {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .experience-text-date {
         font-size: 1rem;
     }
 
+    .experience-roundedimg {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-banner {
+        height: 12rem;
+    }
+    
+    .experience-text-role,
+    .experience-text-company {
+        font-size: 1.3rem;
+    }
+
+    .experience-text-date {
+        font-size: 0.95rem;
+    }
+
     .experience-text-desc {
         font-size: 0.95rem;
     }
-}
-.dark-mode .experience-card {
-    background-color: $darkBackground;
-    color: $textColorDark;
+    
+    .experience-roundedimg {
+        width: 7rem;
+        height: 7rem;
+        top: 8rem;
+    }
 }

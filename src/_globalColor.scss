@@ -1,64 +1,93 @@
-﻿/* === Theme Variables === */
+﻿/* === 🌟 PREMIUM THEME VARIABLES - WORLD CLASS DESIGN === */
 
-// 🎨 Buttons
-$buttonColor: #4b0082;
-$buttonHover: #6a0dad;
-$topButtonHover: #3d3d3d;
+// 🎨 PRIMARY BRAND COLORS - Luxury Gradient Palette
+$primaryPurple: #6366f1;
+$primaryBlue: #3b82f6;
+$primaryCyan: #06b6d4;
+$accentOrange: #f97316;
+$accentPink: #ec4899;
+$luxuryGold: #fbbf24;
 
-// 🌞 Light Theme Colors
-$titleColor: #222222;
-$textColor: #333333;
-$subTitle: #666666;
-$cardSubtitle: #5a5a5a;
+// 🔥 PREMIUM GRADIENTS
+$gradientPrimary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$gradientHero: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+$gradientAccent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+$gradientSuccess: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+$gradientWarning: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+$gradientCool: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+$gradientWarm: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+$gradientNeon: linear-gradient(135deg, #f761a1 10%, #8c1bab 100%);
+$gradientSunset: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);
+$gradientAurora: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 
-// 🌚 Dark Theme Colors
-$textColorDark: #ffffff;
+// 🎯 Buttons - Premium Style
+$buttonColor: #6366f1;
+$buttonHover: #4f46e5;
+$buttonGradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$topButtonHover: #4f46e5;
 
-// ⚙️ Toggle
-$toggleCheck: #00aaff;
-$toggleSwitchSliderBG: #eeeeee;
+// 🌞 Light Theme Colors - Professional & Clean
+$titleColor: #1e293b;
+$textColor: #475569;
+$subTitle: #64748b;
+$cardSubtitle: #94a3b8;
 
-// 🧱 GitHub Cards
-$githubRepoCardLanguageColorBG: #007acc;
-$githubRepoCardColor: #5d6d7e;
-$githubRepoCardRepoCardStatsColor: #85929e;
-$githubRepoCardRepoNameColor: #2e4053;
-$githubProfileCardBorder: #9b59b6;
+// 🌚 Dark Theme Colors - Modern & Sleek
+$textColorDark: #f1f5f9;
+$titleColorDark: #f8fafc;
 
-// 🧁 Light Backgrounds
-$lightBackground1: #fffaf0;
-$lightBackground2: #fff8e7;
-$lightBackground3: #fefae0;
+// ⚙️ Toggle - Smooth & Modern
+$toggleCheck: #6366f1;
+$toggleSwitchSliderBG: #e2e8f0;
 
-// 🌑 Dark Background
-$darkBackground: #1c1e21;
+// 🧱 GitHub Cards - Professional Look
+$githubRepoCardLanguageColorBG: #6366f1;
+$githubRepoCardColor: #64748b;
+$githubRepoCardRepoCardStatsColor: #94a3b8;
+$githubRepoCardRepoNameColor: #1e293b;
+$githubProfileCardBorder: #8b5cf6;
 
-// 🧱 Box Shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
-$lightBoxShadow: rgba(0, 0, 0, 0.1);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
-$darkBoxShadow: #aaaaaa;
-$darkBoxShadow2: #f0f0f0;
+// 🧁 Light Backgrounds - Elegant & Sophisticated
+$lightBackground1: #ffffff;
+$lightBackground2: #f8fafc;
+$lightBackground3: #f1f5f9;
+$glassBackground: rgba(255, 255, 255, 0.7);
 
-// 🌈 Gradients
-$experienceCardBlurredDivLG: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
-$experienceCardBannerLG: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+// 🌑 Dark Background - Deep & Premium
+$darkBackground: #0f172a;
+$darkBackground2: #1e293b;
+$darkBackground3: #334155;
+$glassBackgroundDark: rgba(15, 23, 42, 0.7);
 
-// 🟪 UI Elements
-$progressBarBackground: #f0e9e9;
-$progressBarSpanBG: #9b59b6;
-$lightBorder1: rgba(200, 200, 200, 0.3);
-$educationCardBorder: #b3ace9;
-$headerHoverBG: #fdfdfd;
-$contactDetailHoverTS: #a3a3a3;
-$appHeaderBG: #fffef6;
-$iconBackground: #222222;
+// 🧱 Box Shadows - Premium Depth
+$lightBoxShadowDark: rgba(0, 0, 0, 0.1);
+$lightBoxShadow: rgba(0, 0, 0, 0.05);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.2);
+$shadowPremium: 0 20px 60px rgba(0, 0, 0, 0.15);
+$shadowGlass: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+$shadowNeon: 0 0 30px rgba(99, 102, 241, 0.4);
+$darkBoxShadow: rgba(255, 255, 255, 0.1);
+$darkBoxShadow2: rgba(255, 255, 255, 0.05);
 
-// 🧠 Skills & Links
-$skillsColor: #6a0dad;
-$appLink: #ff6f61;
+// 🌈 Gradients - Experience Cards
+$experienceCardBlurredDivLG: linear-gradient(135deg, rgba(99, 102, 241, 0.8), rgba(139, 92, 246, 0.8));
+$experienceCardBannerLG: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
-// 🌐 Social Media
+// 🟪 UI Elements - Modern & Clean
+$progressBarBackground: #f1f5f9;
+$progressBarSpanBG: #6366f1;
+$lightBorder1: rgba(226, 232, 240, 0.6);
+$educationCardBorder: #8b5cf6;
+$headerHoverBG: #f8fafc;
+$contactDetailHoverTS: #6366f1;
+$appHeaderBG: #ffffff;
+$iconBackground: #1e293b;
+
+// 🧠 Skills & Links - Vibrant & Professional
+$skillsColor: #6366f1;
+$appLink: #ec4899;
+
+// 🌐 Social Media - Brand Colors
 $faceBook: #3b5998;
 $linkedin: #0077b5;
 $github: #2c3e50;
@@ -71,37 +100,60 @@ $instagram: #e4405f;
 $kaggle: #20beff;
 
 
-/* === TYPOGRAPHY (GLOBAL HEADING + TEXT COLOR) === */
+/* === 🎨 TYPOGRAPHY (GLOBAL HEADING + TEXT COLOR) === */
 
-// 🔠 Headings
+// 🔠 Headings - Bold & Modern
 h1, h2, h3, h4, h5, h6 {
     color: $titleColor;
     font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
-// 📝 Subtitles
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    background: $gradientPrimary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+// 📝 Subtitles - Clean & Readable
 .subTitle,
 .contact-subtitle,
 .achievement-subtitle {
     color: $subTitle;
     font-weight: 500;
+    line-height: 1.6;
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
-// 🟣 Skill bullet lines
+// 🟣 Skill bullet lines - Modern Style
 .skills-text-bullet {
     color: $textColor;
     font-weight: 500;
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateX(5px);
+    }
 }
 
-/* === DARK MODE OVERRIDES === */
+/* === 🌙 DARK MODE OVERRIDES === */
 
 .dark-mode {
+    background: linear-gradient(180deg, $darkBackground 0%, $darkBackground2 100%);
+    
     .heading,
     .project-title,
     .education-heading,
@@ -111,16 +163,25 @@ h1, h2, h3, h4, h5, h6 {
         color: $textColorDark;
     }
 
+    h1 {
+        background: $gradientCool;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
     .subTitle,
     .contact-subtitle,
     .achievement-subtitle {
         color: $textColorDark;
+        opacity: 0.9;
     }
 
     .skills-text-bullet {
         color: $textColorDark;
     }
 }
+
 .dark-mode {
     h1, h2, h3, h4, h5, h6,
     .heading, .project-title, .education-heading,
@@ -132,6 +193,7 @@ h1, h2, h3, h4, h5, h6 {
     .contact-subtitle,
     .achievement-subtitle {
         color: $textColorDark !important;
+        opacity: 0.9;
     }
 
     .skills-text-bullet {

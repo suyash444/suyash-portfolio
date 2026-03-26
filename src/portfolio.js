@@ -4,7 +4,6 @@ const splashScreen = {
     enabled: false
 };
 
-
 const illustration = {
     animated: false
 };
@@ -15,7 +14,7 @@ const greeting = {
     subTitle:
         "Software Engineer and Data Scientist with 4+ years of experience in Python, C#, ML, and Cloud (GCP, AWS). Building AI-powered logistics solutions at Teklog Srl, Milan.",
     resumeLink:
-        "https://drive.google.com/uc?export=download&id=147ZGIFfwaYCcDEw0ExoNrgtONbK-x_2-",
+        "https://drive.google.com/uc?export=download&id=1WAbDNR_P1QKUebf6zvWgRKBuE7YeboDm",
     displayGreeting: true
 };
 
@@ -76,9 +75,7 @@ const educationInfo = {
             ]
         }
     ]
-
 };
-
 
 const techStack = {
     viewSkillBars: false,
@@ -98,45 +95,41 @@ export const openSource = {
 
 export const resumeSection = {
     display: true,
-    resumeLink: "https://drive.google.com/uc?export=download&id=147ZGIFfwaYCcDEw0ExoNrgtONbK-x_2-"
+    resumeLink: "https://drive.google.com/uc?export=download&id=1WAbDNR_P1QKUebf6zvWgRKBuE7YeboDm"
 };
 
-
-
 const workExperiences = {
-display: true,
-experience: [
-    {
-        role: "AI/ML Engineer",
-        company: "Teklog Srl",
-        companylogo: require("./assets/images/teklogLogo.png"),
-        date: "July 2025 – Present",
-        location: "Milan, Italy",
-        desc: "Building AI-powered logistics solutions using Python & C# (.NET). Developing ML models to optimize delivery routes and warehouse operations, reducing costs and improving efficiency. Deploying scalable applications with Docker & Kubernetes."
-    },
-    {
-        role: "Data Scientist Intern",
-        company: "Johnson Electric",
-        companylogo: require("./assets/images/johnsonLogo.png"),
-        date: "2024 – 2025",
-        desc: "Developed ML pipelines for anomaly detection in automotive cooling systems using real-time sensor diagnostics."
-    },
+    display: true,
+    experience: [
+        {
+            role: "Software Engineer",
+            company: "Teklog Srl",
+            companylogo: require("./assets/images/teklogLogo.png"),
+            date: "July 2025 – Present",
+            location: "Milan, Italy",
+            desc: "Building AI-powered logistics solutions using Python & C# (.NET). Developing ML models to optimize delivery routes and warehouse operations, reducing costs and improving efficiency. Deploying scalable applications with Docker & Kubernetes."
+        },
+        {
+            role: "Data Scientist Intern",
+            company: "Johnson Electric",
+            companylogo: require("./assets/images/johnsonLogo.png"),
+            date: "2024 – 2025",
+            desc: "Developed ML pipelines for anomaly detection in automotive cooling systems using real-time sensor diagnostics."
+        },
         {
             role: "Data Scientist Intern",
             company: "AlmaBetter",
             companylogo: require("./assets/images/almaLogo.png"), 
-            date: " 2022 –  2024",
+            date: "2022 – 2024",
             desc: "Worked on end-to-end data analysis, visualization, and dashboarding using Python and Power BI."
         },
-
         {
             role: "Data Scientist Intern",
             company: "SoftOneTech Solutions",
             companylogo: require("./assets/images/softone.png"), 
-            date: " 2023 –  2023",
+            date: "2023 – 2023",
             desc: "Performed EDA, SQL optimization, and applied ML for business insights. Scored 85/100 in internship evaluations."
         },
-
         {
             role: "Software Developer",
             company: "Tata Consultancy Services",
@@ -208,7 +201,7 @@ const bigProjects = {
 };
 
 const certifications = {
-    display: true,  // toggle visibility
+    display: true,
     certifications: [
         {
             title: "SQL (Intermediate) Certificate",
@@ -253,13 +246,9 @@ const certifications = {
     ]
 };
 
-
-
-
-
 const contactInfo = {
     title: "Contact Me ☎️",
-    subtitle: "Looking to build something great together? I’d love to hear from you.",
+    subtitle: "Have an exciting project or opportunity in mind? Let's connect and create something exceptional together.",
     number: "+39 3517024503",
     email_address: "singhsuyash444@gmail.com"
 };
@@ -293,13 +282,9 @@ const achievementSection = {
             imageAlt: "TCS Logo",
             footerLink: []
         }
-        
-
     ],
     display: true
 };
-
-
 
 const isHireable = true;
 
@@ -318,5 +303,4 @@ export {
     contactInfo,
     isHireable,
     certifications
-    
 };
