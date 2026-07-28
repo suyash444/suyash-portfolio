@@ -29,9 +29,7 @@ export default function Greeting() {
               </h1>
 
               <p className={`greeting-summary ${isDark ? "dark-mode" : ""}`}>
-                Software Engineer & Data Scientist with 4+ years of experience
-                building scalable solutions using Python, C#, Machine Learning,
-                and Cloud platforms (GCP, AWS). Currently at Teklog Srl, Milan.
+                {greeting.subTitle}
               </p>
 
               <div className="button-greeting-div">

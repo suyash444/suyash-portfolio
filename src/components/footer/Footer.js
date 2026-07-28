@@ -10,10 +10,10 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <footer className="footer-div" aria-label="Footer Section">
         <p className={`footer-text ${isDark ? "dark-mode" : ""}`}>
-          <strong>Suyash Singh</strong> — Data Scientist & Cloud Engineer
+          <strong>Suyash Singh</strong> — Software Engineer & Data Scientist
         </p>
         <p className={`footer-text ${isDark ? "dark-mode" : ""}`}>
-          Building intelligent data-driven solutions using ML, GCP, and DevOps.
+          Building scalable solutions with Python, C#, Machine Learning, and Cloud platforms (GCP, AWS).
         </p>
       </footer>
     </Fade>

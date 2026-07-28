@@ -12,7 +12,7 @@ const greeting = {
   username: "Suyash Singh",
   title: "Suyash Singh",
   subTitle:
-    "Software Engineer and Data Scientist with 4+ years of experience in Python, C#, ML, and Cloud (GCP, AWS). Building AI-powered logistics solutions at Teklog Srl, Milan.",
+    "Software Engineer & Data Scientist with 4+ years of experience building scalable solutions using Python, C#, Machine Learning, and Cloud platforms (GCP, AWS).",
   resumeLink:
     "https://drive.google.com/uc?export=download&id=1WAbDNR_P1QKUebf6zvWgRKBuE7YeboDm",
   displayGreeting: true
@@ -106,7 +106,7 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Teklog Srl",
       companylogo: require("./assets/images/teklogLogo.png"),
-      date: "July 2025 – Present",
+      date: "July 2025 – June 2026",
       location: "Milan, Italy",
       desc: "Building AI-powered logistics solutions using Python & C# (.NET). Developing ML models to optimize delivery routes and warehouse operations, reducing costs and improving efficiency. Deploying scalable applications with Docker & Kubernetes."
     },
@@ -204,6 +204,16 @@ const bigProjects = {
 const certifications = {
   display: true,
   certifications: [
+    {
+      title: "Associate Cloud Engineer",
+      subtitle: "Issued by Google Cloud",
+      footerLink: [
+        {
+          name: "View Badge",
+          url: "https://www.credly.com/badges/49fd8ced-6c97-448f-8414-1ba9a452a986/linked_in_profile"
+        }
+      ]
+    },
     {
       title: "SQL (Intermediate) Certificate",
       subtitle: "Issued by HackerRank in 2024",

@@ -36,6 +36,7 @@ export default function Contact() {
                   className="contact-detail"
                   href={`tel:${contactInfo.number}`}
                 >
+                  <i className="fas fa-phone-alt contact-icon"></i>
                   {contactInfo.number}
                 </a>
               )}
@@ -45,9 +46,15 @@ export default function Contact() {
                   className="contact-detail-email"
                   href={`mailto:${contactInfo.email_address}`}
                 >
+                  <i className="fas fa-envelope contact-icon"></i>
                   {contactInfo.email_address}
                 </a>
               )}
+
+              <div className="contact-location">
+                <i className="fas fa-map-marker-alt contact-icon"></i>
+                Milan, Italy
+              </div>
 
               <SocialMedia />
             </div>
