@@ -13,7 +13,8 @@ export default function Footer() {
           <strong>Suyash Singh</strong> — Software Engineer & Data Scientist
         </p>
         <p className={`footer-text ${isDark ? "dark-mode" : ""}`}>
-          Building scalable solutions with Python, C#, Machine Learning, and Cloud platforms (GCP, AWS).
+          Building scalable solutions with Python, C#, Machine Learning, and
+          Cloud platforms (GCP, AWS).
         </p>
       </footer>
     </Fade>
